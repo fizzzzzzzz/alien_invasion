@@ -18,6 +18,7 @@ class Settings():
         self.fleet_drop_speed = 10
 
         self.speed_scale = 1.1
+        self.score_scale = 1.5
 
         self.initialize_dynamic_settings()
 
@@ -35,3 +36,5 @@ class Settings():
         self.ship_speed_factor *= self.speed_scale
         self.bullet_speed_factor *= self.speed_scale
         self.alien_speed_factor *= self.speed_scale
+
+        self.alien_point =int(self.alien_point * self.score_scale)
